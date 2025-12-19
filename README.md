@@ -48,6 +48,8 @@
 ### 许可证
 
 MIT
+VirusTotal扫描结果
+[![VirusTotal Scan](https://img.shields.io/badge/VirusTotal-Scan_Result-blue)](https://www.virustotal.com/gui/file/87f3d9115a11121de1748001f5180300a0614fa325ccb960ed3d302c4d588d96?nocache=1)
 
 # Caps2Lang
 🎮 A tiny, lag-free CapsLock switcher for gamers — stop IM stutters in full-screen games.
@@ -89,3 +91,6 @@ This tool uses a global keyboard hook (`WH_KEYBOARD_LL`) — no memory injection
 
 ## License
 MIT License
+
+## VirusTotal scan results
+[![VirusTotal Scan](https://img.shields.io/badge/VirusTotal-Scan_Result-blue)](https://www.virustotal.com/gui/file/87f3d9115a11121de1748001f5180300a0614fa325ccb960ed3d302c4d588d96?nocache=1)
