@@ -42,3 +42,44 @@
 ### 许可证
 
 MIT
+
+# Caps2Lang
+🎮 A tiny, lag-free CapsLock switcher for gamers — stop IM stutters in full-screen games.
+
+## Why This?
+In full-screen games like *CS2* or *Valorant*, default OS input method (IM) switches (e.g., Shift or Win+Space) often trigger system UI pops — causing game lag, frame drops, or even desktop switches. This tool uses a low-level keyboard hook to turn CapsLock into a "hard switch" command, so you can toggle languages without disrupting gameplay.
+
+
+## Features
+- **Short-press CapsLock (<500ms):** Force-switch between Chinese/English (simulates Left Shift, ignores current IM state).
+- **Long-press CapsLock (>500ms):** Trigger native Caps Lock (no breaking old habits).
+- **Optional Shift Block:** Disable OS-native Shift-based IM switching — no more accidental IM pops mid-game.
+- **Extremely Lightweight:** Written in pure C (Win32 API), <1MB RAM usage, no installer (single .exe).
+- **Auto-Start:** One-click setup via tray menu.
+
+
+## How to Use
+1. Download `Caps2Lang.exe`.
+2. Run it (right-click → *Run as administrator* — required for hook access in high-privilege game windows).
+3. The app runs silently in your system tray (bottom-right corner).
+
+
+## Tray Menu (Right-Click Icon)
+- **Block System Shift Switch:** Enable to stop Left/Right Shift from triggering IM changes.
+- **Auto-Start on Boot:** Adds the app to your user-level startup registry.
+- **Exit:** Unhooks the keyboard listener and closes the app.
+
+
+## Build Environment
+- **Language:** C (Win32 API)
+- **Compiler:** Visual Studio (recommended) or MinGW
+- **Libraries Linked:** `user32.lib`, `shell32.lib`, `advapi32.lib`
+- **Character Set:** Unicode
+
+
+## Disclaimer
+This tool uses a global keyboard hook (`WH_KEYBOARD_LL`) — no memory injection is involved. However, use at your own risk in games with strict anti-cheat systems (some may flag hook-based tools).
+
+
+## License
+MIT License
